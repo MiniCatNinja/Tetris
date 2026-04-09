@@ -24,6 +24,10 @@ function canMove(piece, grid, dRow, dCol) {
   }
   return true;
 }
+
+
+
+
 // Move the piece down
 if (canMove(piece, grid, 1, 0)) {
   piece.row++;
@@ -31,6 +35,8 @@ if (canMove(piece, grid, 1, 0)) {
   lockPiece(piece, grid);
   piece = spawnNewPiece();
 }
+
+
 
 // Lock the piece into the grid
 function lockPiece(piece, grid) {
